@@ -21,7 +21,7 @@ This RPM does the following:
 # create build tree and copy files to necessary files to it
 ###
 #**** must define path to tomcat ***
-tomcat_init_file="/home/centos/rpmbuild/dev/tomcat9/tomcat"
+tomcat_init_file="/home/vagrant/dev/tomcat9/tomcat"
 #****
 
 echo "BUILDROOT = $RPM_BUILD_ROOT"
