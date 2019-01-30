@@ -6,7 +6,7 @@
 # description: Tomcat Web Application Server
 #
 # processname: tomcat
-# pidfile: /opt/tomcat/tomcat.pid
+# pidfile: /opt/tomcat/temp/tomcat.pid
 
 ### BEGIN INIT INFO
 # Provides: tomcat
