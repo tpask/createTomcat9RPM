@@ -2,7 +2,7 @@
 %define version 1.0.0
 %define release 1
 %define java_jdk java-1.8.0-openjdk-devel
-%define tomcat_uri https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.14/bin/apache-tomcat-9.0.14.tar.gz
+%define tomcat_uri http://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz
 %define tarball %(echo %{tomcat_uri} |awk -F "/" '{print $NF}')
 %define tomcat_ver %(echo ${tarball} |sed "s/\.tar\.gz//")
 %define tomcat_init /home/vagrant/dev/tomcat9/tomcat
@@ -17,7 +17,7 @@ Packager: Thien P.
 Version: %{version}
 Release: %{release}
 BuildArch: x86_64
-Summary: RPM to install java-1.8.0-openjdk-devel and apache-tomcat-9.0.14.tar.gz  
+Summary: RPM to install java-1.8.0-openjdk-devel and apache-tomcat-9.0.16.tar.gz  
 License: GPL
 URL: https://www.k9lovers.io
 Requires: %{java_jdk}
@@ -25,7 +25,7 @@ Provides: wget
 
 %description
 This RPM does the following:
-- installs java-1.8.0-openjdk-devel and apache-tomcat-9.0.14.tar.gz to /opt/tomcat.
+- installs java-1.8.0-openjdk-devel and apache-tomcat-9.0.16.tar.gz to /opt/tomcat.
 - creates user tomcat
 - configures init.d to auto start tomcat using tomcat user after reboot
 - once installed you can use service tomcat start to start tomcat or reboot-
